@@ -1,3 +1,4 @@
+import os
 import random
 
 import streamlit as st
@@ -10,7 +11,19 @@ from txtosqlbot.config import Config
 from txtosqlbot.models import create_llm
 from txtosqlbot.tools import get_available_tools, with_sql_cursor
 
+# Load environment variables from .env file
 load_dotenv()
+
+# Explicitly set the GROQ_API_KEY in the environment
+groq_api_key = os.getenv("GROQ_API_KEY")
+if not groq_api_key:
+    st.error("GROQ_API_KEY not found. Please make sure it's set in your .env file.")
+    print("ERROR: GROQ_API_KEY not found in environment variables")
+else:
+    # This ensures the API key is directly available in the os.environ dictionary
+    os.environ["GROQ_API_KEY"] = groq_api_key
+    print(f"GROQ_API_KEY found and set: {groq_api_key[:5]}...")
+
 
 LOADING_MESSAGES = [
     "Analyzing your database schema...",
