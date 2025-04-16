@@ -1,5 +1,5 @@
 [project]
-name = "querymancer"
+name = "txtosqlbot"
 version = "0.1.0"
 description = "AI agent that lets you to talk to your database"
 readme = "README.md"
@@ -32,4 +32,4 @@ pythonpath = [
 ]
 
 [tool.setuptools]
-packages = ["querymancer"]
+packages = ["txtosqlbot"]

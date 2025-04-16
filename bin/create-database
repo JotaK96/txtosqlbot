@@ -10,6 +10,7 @@ import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from faker import Faker
+
 from txtosqlbot.config import Config, seed_everything
 
 PRODUCT_CATEGORIES = [

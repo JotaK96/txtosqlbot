@@ -39,7 +39,7 @@ def load_css(css_file):
 
 
 st.set_page_config(
-    page_title="Rootstrap_sql_head",  
+    page_title="Rootstrap_sql_head",
     page_icon="🧙‍♂️",
     layout="centered",
     initial_sidebar_state="collapsed",

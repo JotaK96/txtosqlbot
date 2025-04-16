@@ -68,7 +68,7 @@ This should create a file called `ecommerce.sqlite` in the `data` directory. Her
 
 ### Run Ollama, Qwen, and Groq API Setup
 
-Querymancer can use Ollama for LLM inference. 
+txtosqlbot can use Ollama for LLM inference. 
 One model you can use is `gemma3-tools:12b`:
 
 ```bash
