@@ -13,14 +13,6 @@ Features:
 
 Make sure you have [`uv` installed](https://docs.astral.sh/uv/getting-started/installation/).
 
-## Installing uv through MAC OS cmd:
-
-Install HomeBrew on MAc
-
-Open terminal and type: 
-
-brew install uv
-
 Clone the repository:
 
 ```bash
